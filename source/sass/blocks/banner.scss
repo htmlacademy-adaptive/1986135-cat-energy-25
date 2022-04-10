@@ -1,0 +1,22 @@
+.banner {}
+
+.banner__wrapper {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+}
+
+.banner__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

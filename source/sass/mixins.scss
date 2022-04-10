@@ -1,0 +1,27 @@
+@mixin description-text {
+  font: {
+    family: "Arial", sans-serif;
+    weight: 400;
+    size: 14px;
+  }
+
+  line-height: 18px;
+  color: #444444;
+}
+
+@mixin mid-size-title {
+  font: {
+    family: "Oswald", Arial, sans-serif;
+    weight: 400;
+    size: 36px;
+  }
+
+  line-height: 36px;
+  color: #000000;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

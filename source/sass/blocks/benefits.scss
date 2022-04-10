@@ -1,0 +1,17 @@
+.benefits {}
+
+.benefits__wrapper {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+}
+
+.benefits__image {}
+
+.benefits__legend {
+  font-family: $basic-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+}

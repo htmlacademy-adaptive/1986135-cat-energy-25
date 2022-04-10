@@ -1,0 +1,22 @@
+.advantages {
+  padding: 0 20px;
+}
+
+.advantages-wrapper {}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages-item {}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $title-color;
+}
+
+.advantages-description {
+  @include description-text;
+}

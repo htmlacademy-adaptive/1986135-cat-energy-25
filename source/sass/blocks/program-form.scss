@@ -1,0 +1,15 @@
+.program-form {
+  padding: 0 20px;
+}
+
+.program-form__title {
+  @include mid-size-title;
+}
+
+.program-form__subtitle {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $title-color;
+}

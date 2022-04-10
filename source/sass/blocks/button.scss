@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--primary {
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-white;
+    background-color: $basic-green;
+  }
+
+  &--show-more {
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-color;
+    background-color: $bg-secondary-color;
+  }
+}
