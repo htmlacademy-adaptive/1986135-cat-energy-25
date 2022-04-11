@@ -1,0 +1,52 @@
+.example {
+  padding: 0 20px;
+}
+
+.example__wrapper {}
+
+.example__content {
+  background: #eaeaea;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $title-color;
+}
+
+.example__item {}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $title-color;
+}
+
+.example__description {
+  @include description-text;
+}
+
+.example__total {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.example__visual {
+  &--before{}
+  &--after{}
+}
+
+.example__model {
+  &--before {}
+  &--after {}
+}
+
+.example__image {
+  &--before {}
+  &--after {}
+}
