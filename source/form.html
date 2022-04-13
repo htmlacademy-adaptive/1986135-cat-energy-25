@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body class="page__body">
@@ -13,129 +13,310 @@
     <a class="main-header__logo" href="#">
       <img src="#" width="" height="" alt="Логотип Кэт энерджи.">
       <img src="#" width="" height="" alt="Логотип Кэт энерджи.">
-
     </a>
     <nav class="main-nav main-header__nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item ">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item ">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+
     </nav>
   </header>
-  <main class="main-container">
-    <section class="program-form">
-      <h1 class="program-form__title">Подбор программы</h1>
-      <p class="program-form__subtitle">Заполните анкету, и мы подберем
-        программу питания для вашего кота</p>
-      <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="user-form__info">
-          <ul class="user-form__list">
-            <li class="user-form__item">
-              <label class="user-form__label">ИМЯ:*
-                <input class="user-form__input" type="text" name="cat-name" placeholder="БАРСИК" required>
-              </label>
-            </li>
-            <li class="user-form__item">
-              <label class="user-form__label">Вес (кг):*
-                <input class="user-form__input" type="number" name="cat-weight" placeholder="7" required>
-              </label>
-            </li>
-            <li class="user-form__item">
-              <label class="user-form__label">Возраст (лет):*
-                <input class="user-form__input" type="number" name="cat-weight" placeholder="7" required>
-              </label>
-            </li>
-          </ul>
+  <main class="catalog-container">
+    <section class="products">
+      <h1 class="catalog-container__title">Каталог продукции</h1>
+      <ul class="products__list catalog">
+        <li class="products__item card">
+          <a class="card__link card-link-image" href="#">
+            <img class="card__image" src="" width="" height="" alt="Упаковка корма с курицей.">
+          </a>
+          <div class="card__wrapper">
+            <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy
+                PRO
+                500 г</a>
+            </h3>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Масса</dt>
+                <dd class="card__description">500г</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Вкус</dt>
+                <dd class="card__description">Курица</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Цена</dt>
+                <dd class="card__description">700 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card__button" href="#">Заказать</a>
+          </div>
+
+
+        </li>
+        <li class="products__item card">
+
+          <a class="card__link card-link-image" href="#">
+            <img class="card__image" src="" width="" height="" alt="Упаковка корма с курицей.">
+          </a>
+          <div class="card__wrapper">
+            <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy
+                PRO
+                1000 г</a>
+            </h3>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Масса</dt>
+                <dd class="card__description">1000г</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Вкус</dt>
+                <dd class="card__description">Курица</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Цена</dt>
+                <dd class="card__description">1000 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card__button" href=" #">Заказать</a>
+          </div>
+        </li>
+        <li class="products__item card">
+          <a class="card__link card-link-image" href="#">
+            <img class="card__image" src="" width="" height="" alt="Упаковка корма с рыбой.">
+          </a>
+          <div class="card__wrapper">
+            <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy
+                PRO
+                500 г</a>
+            </h3>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Масса</dt>
+                <dd class="card__description">500г</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Вкус</dt>
+                <dd class="card__description">Рыба</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Цена</dt>
+                <dd class="card__description">700 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card__button" href="#">Заказать</a>
+          </div>
+
+        </li>
+        <li class="products__item card">
+          <a class="card__link card-link-image" href="#">
+            <img class="card__image" src="" width="" height="" alt="Упаковка корма с рыбой.">
+          </a>
+          <div class="card__wrapper">
+            <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy
+                PRO
+                1000 г</a>
+            </h3>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Масса</dt>
+                <dd class="card__description">1000г</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Вкус</dt>
+                <dd class="card__description">Рыба</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Цена</dt>
+                <dd class="card__description">1000 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card__button" href="#">Заказать</a>
+          </div>
+        </li>
+        <li class="products__item card">
+          <a class="card__link card-link-image" href="#">
+            <img class="card__image" src="" width="" height="" alt="Упаковка корма с гречкой.">
+          </a>
+          <div class="card__wrapper">
+            <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy
+                SLIM
+                500 г</a>
+            </h3>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Масса</dt>
+                <dd class="card__description">500г</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Вкус</dt>
+                <dd class="card__description">Гречка</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Цена</dt>
+                <dd class="card__description">400 Р.</dd>
+              </div>
+            </dl>
+            <a class="button card__button button--primary" href="#">Заказать</a>
+          </div>
+
+        </li>
+        <li class="products__item card">
+          <a class="card__link card-link-image" href="#">
+            <img class="card__image" src="" width="" height="" alt="Упаковка корма с гречкой.">
+          </a>
+          <div class="card__wrapper">
+            <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy
+                SLIM
+                1000 г</a>
+            </h3>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Масса</dt>
+                <dd class="card__description">1000г</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Вкус</dt>
+                <dd class="card__description">Гречка</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Цена</dt>
+                <dd class="card__description">700 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card__button" href="#">Заказать</a>
+          </div>
+        </li>
+        <li class="products__item card card-more">
+          <a class="card-more__link">
+            <img class="card-more__image" src="" width="" height="" alt="Знак плюс.">
+            <div class="card__wrapper">
+              <h3 class="card__title card-more__title">
+                Показать еще 100500 товаров
+              </h3>
+              <p class="card-more__subtitle">На самом деле вкусов гораздо больше!</p>
+              <button class="button card-more__button button--show-more" type="button">показать все</button>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="products products-supplementary">
+      <h2 class="products-supplementary__title">Дополнительные товары</h2>
+      <ul class="products__list products-supplementary__list">
+        <li class="products__item card-supplementary">
+
+          <div class="card-supplementary__wrapper">
+            <h3 class="card-supplementary__title">
+              <a class="card-supplementary__link">Сахарозаменитель</a>
+            </h3>
+            <dl class="card-supplementary__list">
+              <div class="card-supplementary__item">
+                <dt class="card-supplementary__feature">1 упаковка (100 г)</dt>
+                <dd class="card-supplementary__description">200 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+          </div>
+
+        </li>
+        <li class="products__item card-supplementary">
+
+          <div class="card-supplementary__wrapper">
+            <h3 class="card-supplementary__title">
+              <a class="card-supplementary__link">Питьевая вода</a>
+            </h3>
+            <dl class="card-supplementary__list">
+              <div class="card-suppplementary__item">
+                <dt class="card-supplementary__feature">5 литров</dt>
+                <dd class="card-supplementary__description">50 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+          </div>
+
+        </li>
+        <li class="products__item card-supplementary">
+          <div class="card-supplementary__wrapper">
+            <h3 class="card-supplementary__title">
+              <a class="card-supplementary__link">Молоко</a>
+            </h3>
+            <dl class="card-supplementary__list">
+              <div class="card-supplementary__item">
+                <dt class="card-supplementary__feature">1 литр</dt>
+                <dd class="card-supplementary__description">100 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+          </div>
+
+        </li>
+        <li class="products__item card-supplementary">
+
+          <div class="card-suppplementary__wrapper">
+            <h3 class="card-supplementary__title">
+              <a class="card-supplementary__link">Витамины</a>
+            </h3>
+            <dl class="card-supplementary__list">
+              <div class="card-supplementary__item">
+                <dt class="card-supplementary__feature">1 упаковка (30 г)</dt>
+                <dd class="card-supplementary__description">300 Р.</dd>
+              </div>
+            </dl>
+            <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+          </div>
+
+        </li>
+      </ul>
+      <div class="benefits">
+        <div class="benefits__wrapper">
+          <img class="benefits__image" src="" width="" height="" alt="Схематичное изображение подарочной коробки.">
+          <p class="benefits__legend">Закажите все
+            и получите чехол для
+            кота в подарок!</p>
         </div>
-        <fieldset class="user-form__filter filter">
-          <legend class="filter__legend visually-hidden">Цель программы.</legend>
-          <ul class="filter__list">
-            <li class="filter__item">
-              <label class="filter__control control">
-                <input class="control__input visually-hidden" type="radio" name="goal" value="slim" checked>похудение
-                <span class="control__mark"></span>
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__control control">
-                <input class="control__input visually-hidden" type="radio" name="goal" value="slim">набор массы
-                <span class="control__mark"></span>
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__control control">
-                <input class="control__input visually-hidden" type="radio" name="goal" value="advice">не знаю (нужен ваш
-                совет)
-                <span class="control__mark"></span>
-              </label>
-            </li>
-        </fieldset>
-        <div class="user-form__contacts user-contacts">
-          <h2 class="user-form__title">Контактные данные
-            (владельца кота)</h2>
-          <ul class="user-form__list">
-            <li class="user-form__item">
-              <label class="user-form__label">E-MAIL:*
-                <input class="user-form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              </label>
-            </li>
-            <li class="user-form__item">
-              <label class="user-form__label">Телефон:*
-                <input class="user-form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="user-form__aboutself">
-          <h2 class="user-form__title">Комментарий</h2>
-          <textarea class="user-form__comment" name="comment" id="comment" rows="5"
-            placeholder="Расскажите обо всех повАдках кота"></textarea>
-        </div>
-        <div class="user-form__add-products  filter">
-          <h2 class="user-form__title">Дополнительно</h2>
-          <ul class="filter__list">
-            <li class="filter__item">
-              <label class="filter__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="sweetener" value="sweetener"
-                  checked>Сахарозаменитель
-                <span class="control__mark"></span>
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="water" value="water">Питьевая вода
-                <span class="control__mark"></span>
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="milk" value="milk">Молоко
-                <span class="control__mark"></span>
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="vitamins" value="vitamins">Витамины
-                <span class="control__mark"></span>
-              </label>
-            </li>
-          </ul>
-        </div>
-        <button class="submit__button  button button--primary" type="submit">отправить заявку</button>
-        <span class="user-form__note user-form__note--bottom">* — Обязательные поля</span>
-      </form>
+      </div>
     </section>
     <section class="map">
       <div class="map__wrapper">

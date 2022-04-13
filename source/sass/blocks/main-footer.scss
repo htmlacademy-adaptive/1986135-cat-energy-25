@@ -3,6 +3,8 @@
 }
 
 .main-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
   background: $bg-secondary-color;
 }
 
@@ -11,3 +13,15 @@
 .main-footer__social {}
 
 .main-footer__copyright {}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding: 0 110px;
+  }
+}
