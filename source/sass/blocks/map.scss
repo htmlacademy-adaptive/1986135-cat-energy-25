@@ -2,11 +2,14 @@
   padding: 0;
 }
 
-.map__wrapper {
+// .map__wrapper {
+//   display: flex;
+//   flex-direction: column;
+// }
 
+.map__advertisment {
+  padding: 26px 20px;
 }
-
-.map__advertisment {}
 
 .map__address {
   font-family: $basic-font;
@@ -15,4 +18,27 @@
   font-size: 14px;
   line-height: 20px;
   color: $text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .map__advertisment{
+    padding: 56px 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__advertisment{
+    padding: 56px 80px;
+  }
+// не получается вывести объявление поверх карты, оно под ней оказывается, что ли..
+  .map__advertisment--above {
+    // position: absolute;
+    // width: 565px;
+    // top: 25%;
+    // left: 30%;
+
+  }
+
+  .map__wrapper {
+  }
 }

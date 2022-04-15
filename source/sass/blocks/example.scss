@@ -2,11 +2,13 @@
   padding: 0 20px;
 }
 
-.example__wrapper {}
-
-.example__content {
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
   background: #eaeaea;
 }
+
+.example__content {}
 
 .example__title {
   font-size: 36px;
@@ -49,4 +51,35 @@
 .example__image {
   &--before {}
   &--after {}
+}
+
+@media (min-width: $tablet-width){
+  .example {
+    padding: 0 30px;
+  }
+
+  .example__wrapper {
+    max-width: 708px;
+    background: #ffffff;
+  }
+
+  .example__visual {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .example {
+    padding: 0 110px;
+  }
+
+  .example__wrapper {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #eaeaea;
+  }
+
+  .example__content {
+  }
 }
