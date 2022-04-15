@@ -9,7 +9,18 @@
 
 .page__body {
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   color: $text-color;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width){
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }

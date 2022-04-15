@@ -2,13 +2,17 @@
   padding: 0;
 }
 
-// .map__wrapper {
-//   display: flex;
-//   flex-direction: column;
-// }
-
 .map__advertisment {
+  margin-top: 32px;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+  }
+}
+
+.map__advertisment--colored {
+  background-color: #f2f2f2;
 }
 
 .map__address {
@@ -21,24 +25,26 @@
 }
 
 @media (min-width: $tablet-width) {
-  .map__advertisment{
-    padding: 56px 70px;
+  .map__advertisment {
+    padding: 60px 70px 56px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map__advertisment{
-    padding: 56px 80px;
+  .map__advertisment {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 565px;
+    margin: 0;
+    padding: 60px 80px 56px;
+    background-color: #ffffff;
+    left: 110px;
+    top: 95px;
+    z-index: 2;
   }
-// не получается вывести объявление поверх карты, оно под ней оказывается, что ли..
-  .map__advertisment--above {
-    // position: absolute;
-    // width: 565px;
-    // top: 25%;
-    // left: 30%;
+}
 
-  }
-
-  .map__wrapper {
-  }
+.map__wrapper {
+  position: relative;
 }

@@ -1,12 +1,41 @@
 .user-form {}
 
-.user-form__info {}
+.user-form__info {
+  display: flex;
+  flex-direction: column;
+  border-bottom: $border-bottom;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 568px;
+    gap: 80px;
+  }
+}
 
 .user-form__list {
   @include list-reset;
+  padding: 0 20px 27px;
+  margin-bottom: 22.3px;
+  border-bottom: $border-bottom;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
-.user-form__item {}
+.user-form__item:not(:last-child) {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
 
 .user-form__label {
   font-weight: 400;
@@ -17,18 +46,112 @@
 
 .user-form__input {}
 
-.user-form__filter {
-  margin: 0;
-  border: none;
+.user-form__input::placeholder {
+  @include placeholder-small;
+
+  @media (min-width: $tablet-width) {
+    @include placeholder-large;
+  }
 }
 
-.user-form__contacts {}
+.user-form__filter {
+  margin: 0;
+  margin-bottom: 19.4px;
+  padding: 0 20px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border: $border-input;
+  }
+}
+
+.user-form__contacts {
+  padding: 0 20px;
+}
+
+.user-form__contacts .user-form__list {
+  padding: 0;
+  margin-bottom: 23.57px;
+  border-bottom: none;
+}
+
+.user-form__contacts .user-form__item:not(:last-child) {
+  margin-bottom: 14.05px;
+}
+
+.user-form__aboutself {
+  margin-bottom: 22.27px;
+  padding: 0 20px;
+}
+
+.user-form__aboutself .user-form__title {
+  margin: 0;
+  margin-bottom: 37.7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 65px 0 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 69px 0 76px;
+  }
+}
+
+.user-form__comment {
+  width: 280px;
+  border: $border-input;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.user-form__comment::placeholder {
+  @include placeholder-small;
+
+  @media (min-width: $tablet-width) {
+    @include placeholder-large;
+  }
+}
+
 
 .user-form__title {
+  margin: 26px 0 36px;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+.user-form__add-products {
+  margin-bottom: 34px;
+  padding: 0 20px;
+}
+
+.user-form__add-products .user-form__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 65px 0 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 67px 0 57px;
+  }
+}
+
+.user-form__button {
+  margin: 0 20px 21px;
 }
 
 .user-form__note {
@@ -37,7 +160,7 @@
   line-height: 16px;
   text-align: center;
   color: $title-color;
-  &--bottom {}
 }
 
-.user-form__comment {}
+.user-form__note--bottom {
+}

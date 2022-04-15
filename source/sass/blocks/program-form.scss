@@ -1,15 +1,40 @@
 .program-form {
-  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0 67px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .program-form__title {
+  margin-bottom: 37px;
+  padding: 0 20px;
   @include mid-size-title;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .program-form__subtitle {
+  margin-bottom: 39px;
+  padding: 0 20px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $title-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    padding: 0;
+  }
 }
