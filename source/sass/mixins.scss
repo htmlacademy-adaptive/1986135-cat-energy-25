@@ -11,12 +11,23 @@
 
 @mixin mid-size-title {
   font: {
-    family: "Oswald", Arial, sans-serif;
+    family: "Oswald", "Arial", sans-serif;
     weight: 400;
     size: 36px;
   }
 
   line-height: 36px;
+  color: #000000;
+}
+
+@mixin large-size-title {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    weight: 400;
+    size: 60px;
+  }
+
+  line-height: 60px;
   color: #000000;
 }
 
