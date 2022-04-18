@@ -11,7 +11,7 @@
 
 @mixin mid-size-title {
   font: {
-    family: "Oswald", Arial, sans-serif;
+    family: "Oswald", "Arial", sans-serif;
     weight: 400;
     size: 36px;
   }
@@ -20,8 +20,39 @@
   color: #000000;
 }
 
+@mixin large-size-title {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    weight: 400;
+    size: 60px;
+  }
+
+  line-height: 60px;
+  color: #000000;
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@mixin placeholder-small {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+@mixin placeholder-large {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #444444;
+  text-transform: uppercase;
 }

@@ -1,0 +1,29 @@
+.products-supplementary__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 79px;
+  }
+}
+
+.products-supplementary__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    @include mid-size-title;
+  }
+}
+
+.products-supplementary__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  // потом удалить
+}

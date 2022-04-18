@@ -1,14 +1,18 @@
 .product-category {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .product-category__list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
+  width: 708px;
 }
 
 .product-category__item {
+  max-width: 708px;
   background: $bg-secondary-color;
 }
 
@@ -31,25 +35,12 @@
   color: $title-color;
 }
 
-@media (min-width: $tablet-width) {
-  .product-category {
-    padding: 0 30px;
-  }
-
-  .product-category__list {
-    width: 708px;
-  }
-
-  .product-category__item{
-    max-width: 708px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .product-category {
     padding: 0 110px;
   }
-// так можно со списками работать? или обертка нужна?
+
+  // так можно со списками работать? или обертка нужна?
   .product-category__list {
     width: 1220px;
     display: flex;
@@ -57,7 +48,7 @@
     justify-content: space-between;
   }
 
-  .product-category__item{
+  .product-category__item {
     max-width: 570px;
   }
 }

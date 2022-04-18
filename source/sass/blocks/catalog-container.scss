@@ -1,5 +1,21 @@
 .catalog-container {}
 
 .catalog-container__title {
+  padding: 27px 0 41px;
+
   @include mid-size-title;
+  border-top: $border-bottom;
+  border-bottom: $border-bottom;
+
+  @media (min-width: $tablet-width) {
+    margin: 64.3px 0 163px;
+    padding: 0;
+
+    @include large-size-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 74px 0 165px;
+    padding: 0;
+  }
 }

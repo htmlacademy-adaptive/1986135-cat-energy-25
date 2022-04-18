@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -226,98 +227,126 @@
             </dl>
             <a class="button button--primary card__button" href="#">Заказать</a>
           </div>
-
-
+        </li>
+        <li class="products__item card">
+          <a class="card__link card-link-image" href="#">
+            <img class="card__image" src="" width="" height="" alt="Упаковка корма с рисом.">
+          </a>
+          <div class="card__wrapper">
+            <h3 class="card__title">
+              <a class="card__link" href="#">Cat Energy
+                SLIM
+                500 г</a>
+            </h3>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Масса</dt>
+                <dd class="card__description">500г</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Вкус</dt>
+                <dd class="card__description">Рис</dd>
+              </div>
+            </dl>
+            <dl class="card__list">
+              <div class="card__item">
+                <dt class="card__feature">Цена</dt>
+                <dd class="card__description">500 Р.</dd>
+              </div>
+            </dl>
+            <a class="button card__button button--primary" href="#">Заказать</a>
+          </div>
         </li>
         <li class="products__item card card-more">
-          <!-- плюсик тоже ссылка? -->
           <img class="card-more__image" src="" width="" height="" alt="Знак плюс.">
           <div class="card__wrapper">
             <h3 class="card__title card-more__title">
               Показать еще 100500 товаров
             </h3>
             <p class="card-more__subtitle">На самом деле вкусов гораздо больше!</p>
-            <!-- тут правильно я сделала? чтобы при отключении JS сработал переход на остальные товары? -->
             <a class="button card-more__button button--show-more" href="#">показать все</a>
           </div>
     </section>
     </li>
     </ul>
     </section>
-    <!-- есть ли смысл добавлять модификаторы, если в принципе это другой каталог? -->
-    <section class="products products--additional">
-      <h2 class="catalog-container__title catalog-container__title--additional">Дополнительные товары</h2>
-      <ul class="products__list catalog catalog-additional">
-        <li class="products__item card card--additional">
+    <section class="products products-supplementary">
+      <h2 class="products-supplementary__title">Дополнительные товары</h2>
+      <div class="products-supplementary__wrapper">
+        <ul class="products__list products-supplementary__list">
+          <li class="products__item card-supplementary">
 
-          <div class="card__wrapper">
-            <h3 class="card__title card__title--additional">
-              <a class="card__link">Сахарозаменитель</a>
-            </h3>
-            <dl class="card__list card__list--additional">
-              <div class="card__item card__item--additional">
-                <dt class="card__feature">1 упаковка (100 г)</dt>
-                <dd class="card__description">200 Р.</dd>
-              </div>
-            </dl>
-            <a class="button button--primary card__button" href="#">Заказать</a>
+            <div class="card-supplementary__wrapper">
+              <h3 class="card-supplementary__title">
+                <a class="card-supplementary__link">Сахарозаменитель</a>
+              </h3>
+              <dl class="card-supplementary__list">
+                <div class="card-supplementary__item">
+                  <dt class="card-supplementary__feature">1 упаковка (100 г)</dt>
+                  <dd class="card-supplementary__description">200 Р.</dd>
+                </div>
+              </dl>
+              <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+            </div>
+
+          </li>
+          <li class="products__item card-supplementary">
+
+            <div class="card-supplementary__wrapper">
+              <h3 class="card-supplementary__title">
+                <a class="card-supplementary__link">Питьевая вода</a>
+              </h3>
+              <dl class="card-supplementary__list">
+                <div class="card-suppplementary__item">
+                  <dt class="card-supplementary__feature">5 литров</dt>
+                  <dd class="card-supplementary__description">50 Р.</dd>
+                </div>
+              </dl>
+              <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+            </div>
+
+          </li>
+          <li class="products__item card-supplementary">
+            <div class="card-supplementary__wrapper">
+              <h3 class="card-supplementary__title">
+                <a class="card-supplementary__link">Молоко</a>
+              </h3>
+              <dl class="card-supplementary__list">
+                <div class="card-supplementary__item">
+                  <dt class="card-supplementary__feature">1 литр</dt>
+                  <dd class="card-supplementary__description">100 Р.</dd>
+                </div>
+              </dl>
+              <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+            </div>
+
+          </li>
+          <li class="products__item card-supplementary">
+
+            <div class="card-suppplementary__wrapper">
+              <h3 class="card-supplementary__title">
+                <a class="card-supplementary__link">Витамины</a>
+              </h3>
+              <dl class="card-supplementary__list">
+                <div class="card-supplementary__item">
+                  <dt class="card-supplementary__feature">1 упаковка (30 г)</dt>
+                  <dd class="card-supplementary__description">300 Р.</dd>
+                </div>
+              </dl>
+              <a class="button button--primary card-supplementary__button" href="#">Заказать</a>
+            </div>
+
+          </li>
+        </ul>
+        <div class="benefits">
+          <div class="benefits__wrapper">
+            <img class="benefits__image" src="" width="" height="" alt="Схематичное изображение подарочной коробки.">
+            <p class="benefits__legend">Закажите все
+              и получите чехол для
+              кота в подарок!</p>
           </div>
-
-        </li>
-        <li class="products__item card card--additional">
-
-          <div class="card__wrapper">
-            <h3 class="card__title card__title--additional">
-              <a class="card__link">Питьевая вода</a>
-            </h3>
-            <dl class="card__list card__list--additional">
-              <div class="card__item card__item--additional">
-                <dt class="card__feature">5 литров</dt>
-                <dd class="card__description">50 Р.</dd>
-              </div>
-            </dl>
-            <a class="button button--primary card__button" href="#">Заказать</a>
-          </div>
-
-        </li>
-        <li class="products__item card card--additional">
-          <div class="card__wrapper">
-            <h3 class="card__title card__title--additional">
-              <a class="card__link">Молоко</a>
-            </h3>
-            <dl class="card__list card__list--additional">
-              <div class="card__item card__item--additional">
-                <dt class="card__feature">1 литр</dt>
-                <dd class="card__description">100 Р.</dd>
-              </div>
-            </dl>
-            <a class="button button--primary card__button" href="#">Заказать</a>
-          </div>
-
-        </li>
-        <li class="catalog__item card card--additional">
-
-          <div class="card__wrapper">
-            <h3 class="card__title card__title--additional">
-              <a class="card__link">Витамины</a>
-            </h3>
-            <dl class="card__list card__list--additional">
-              <div class="card__item card__item--additional">
-                <dt class="card__feature">1 упаковка (30 г)</dt>
-                <dd class="card__description">300 Р.</dd>
-              </div>
-            </dl>
-            <a class="button button--primary card__button" href="#">Заказать</a>
-          </div>
-
-        </li>
-      </ul>
-      <div class="benefits">
-        <div class="benefits__wrapper">
-          <img class="benefits__image" src="" width="" height="" alt="Схематичное изображение подарочной коробки.">
-          <p class="benefits__legend">Закажите все
-            и получите чехол для
-            кота в подарок!</p>
         </div>
       </div>
     </section>
