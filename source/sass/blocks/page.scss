@@ -6,21 +6,21 @@
   font-size: 14px;
   line-height: 20px;
 }
-// что-то запуталась, как здесь сделать, сразу переходит все на планшетный размер, ....забыла подключить медиа((но как тут быть в page?  что оставить, а что нет?
+
 .page__body {
   min-height: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  // min-width: 320px;
+  width: 320px;
   color: $text-color;
   background-color: #ffffff;
-}
-//   @media (min-width: $tablet-width){
-//     width: 768px;
-//   }
 
-//   @media (min-width: $desktop-width) {
-//     width: 1440px;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
