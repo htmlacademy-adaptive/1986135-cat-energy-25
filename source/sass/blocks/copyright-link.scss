@@ -1,5 +1,12 @@
 .copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+  }
 }
 
 .copyright-link__text {
@@ -8,6 +15,25 @@
   font-size: 16px;
   line-height: 18px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }
 
-.copyright-link__image {}
+.copyright-link__image {
+  fill: #666666;
+}
+
+.copyright-link:hover svg,
+.copyright-link:focus svg {
+  fill: $basic-green;
+}
+
+.copyright-link:active {
+  opacity: 0.3;
+}
+
+.copyright-link:active svg {
+  fill: $basic-green;
+}

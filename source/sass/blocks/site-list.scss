@@ -7,6 +7,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,10 +31,18 @@
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    padding: 14px 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    // color: $basic-white;
+    color: #000000;
   }
 }
 
@@ -48,9 +58,43 @@
   @media (min-width: $tablet-width) {
     margin-right: 35px;
 
-    .site-list__item:last-child {
+    &:last-child {
       margin-right: 0;
     }
 
-    &--current {}
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: $basic-green;
+      }
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35.5px;
+
+    &:nth-child(2) {
+      margin-right: 32px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--current {
+      position: relative;
+
+      &::after {
+        background-color: $basic-green;
+        // background-color: $basic-white;
+      }
+    }
+  }
+}

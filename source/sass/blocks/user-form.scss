@@ -1,4 +1,4 @@
-.user-form {}
+// .user-form {}
 
 .user-form__info {
   display: flex;
@@ -44,7 +44,7 @@
   text-transform: uppercase;
 }
 
-.user-form__input {}
+// .user-form__input {}
 
 .user-form__input::placeholder {
   @include placeholder-small;
@@ -162,5 +162,5 @@
   color: $title-color;
 }
 
-.user-form__note--bottom {
-}
+// .user-form__note--bottom {
+// }

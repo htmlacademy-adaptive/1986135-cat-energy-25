@@ -1,12 +1,30 @@
 .banner {
   padding: 27px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .banner__wrapper {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, 100%;
-  background-position: center;
+  background-size: 320px 302px, 320px 302px;
+  background-position: top;
+
+  @media (min-width: $tablet-width) {
+    max-width: 709px;
+    background-color: inherit;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
 }
 
 .banner__title {
@@ -17,29 +35,8 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-}
 
-.banner__slogan {
-  padding-bottom: 299px;
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-}
-
-@media (min-width: $tablet-width) {
-  .banner {
-    padding: 0 30px;
-  }
-
-  .banner__wrapper {
-    max-width: 709px;
-    background-color: inherit;
-    background-image: none;
-  }
-
-  .banner__title {
+  @media (min-width: $tablet-width) {
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -47,28 +44,29 @@
     text-align: left;
   }
 
-  .banner__slogan {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.banner__slogan {
+  margin: 0;
+  padding-bottom: 309px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
     padding-bottom: 629px;
     font-size: 20px;
     line-height: 20px;
     color: $title-color;
     text-align: left;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .banner {
-    padding: 0 110px;
-  }
-
-  .banner__wrapper {
-    max-width: 1220px;
-  }
-  .banner__title {
-    margin-bottom: 40px;
-  }
-
-  .banner__slogan {
+  @media (min-width: $desktop-width) {
     padding-bottom: 42px;
   }
 }

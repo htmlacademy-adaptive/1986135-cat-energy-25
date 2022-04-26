@@ -4,12 +4,7 @@
 }
 
 .map__advertisment {
-  margin-top: 32px;
   padding: 26px 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 72px;
-  }
 }
 
 .map__advertisment--colored {
