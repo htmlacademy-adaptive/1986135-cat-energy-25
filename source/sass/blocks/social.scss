@@ -1,14 +1,41 @@
-.social {}
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 134px;
 
-.social__list {}
+  @include list-reset;
+  padding: 9px 70px;
+  border-bottom: $border-bottom;
 
-.social__item {}
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
 
 .social__link {
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
 
-  &--vkontakte {}
+.social__link svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #666666;
+  text-align: center;
+}
 
-  &--youtube {}
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: $basic-green;
+}
 
-  &--telegram {}
+.social__link:active svg {
+  fill: $basic-green;
+  opacity: 0.3;
 }

@@ -9,7 +9,7 @@
     padding: 0 110px;
   }
 }
-// не срабатывает флекс
+
 .products__list {
   @include list-reset;
   display: flex;
@@ -22,10 +22,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: repeat(4, 245px);
     gap: 143px 80px;
   }
 }
 
-.products__item {}
+// .products__item {}

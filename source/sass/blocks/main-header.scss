@@ -23,6 +23,8 @@
 
 .main-header__logo {
   height: 38px;
+  text-align: center;
+  width: 190px;
 
   @media (min-width: $tablet-width) {
     height: 52px;

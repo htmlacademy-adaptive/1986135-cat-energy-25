@@ -3,18 +3,29 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+}
 
-  &--primary {
-    font-size: 16px;
-    line-height: 20px;
-    color: $basic-white;
-    background-color: $basic-green;
-  }
+.button--primary {
+  width: 280px;
+  box-sizing: border-box;
+  padding: 11px 44px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-white;
+  text-align: center;
+  background-color: $basic-green;
 
-  &--show-more {
-    font-size: 16px;
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 17px 26px;
+    font-size: 20px;
     line-height: 20px;
-    color: $text-color;
-    background-color: $bg-secondary-color;
   }
+}
+
+.button--show-more {
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color;
+  background-color: $bg-secondary-color;
 }

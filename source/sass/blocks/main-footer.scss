@@ -5,14 +5,37 @@
 
 .main-footer__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.main-footer__footer-logo {}
+.main-footer__footer-logo {
+  padding: 39px 75px 31px;
+  border-bottom: $border-bottom;
 
-.main-footer__social {}
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
 
-.main-footer__copyright {}
+.main-footer__footer-logo:hover,
+.main-footer__footer-logo:focus {
+  opacity: 0.8;
+}
+
+.main-footer__footer-logo:active {
+  opacity: 0.6;
+}
+
+.main-footer__copyright {
+  padding: 22px 0;
+}
 
 @media (min-width: $tablet-width) {
   .main-footer {

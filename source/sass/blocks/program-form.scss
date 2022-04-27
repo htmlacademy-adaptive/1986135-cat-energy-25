@@ -11,6 +11,7 @@
 .program-form__title {
   margin-bottom: 37px;
   padding: 0 20px;
+
   @include mid-size-title;
 
   @media (min-width: $tablet-width) {
