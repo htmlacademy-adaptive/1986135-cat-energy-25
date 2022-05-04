@@ -1,0 +1,48 @@
+.form-ending {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    margin-bottom: 82px;
+  }
+}
+
+.form-ending__button {
+  width: 280px;
+  margin-bottom: 21px;
+  padding: 10px 44px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    padding: 13px 42px;
+    margin-bottom: 0;
+    margin-right: 61px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-right: 81px;
+    padding: 13px 188px;
+  }
+}
+
+.form-ending__note {
+  margin-bottom: 32px;
+  display: block;
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

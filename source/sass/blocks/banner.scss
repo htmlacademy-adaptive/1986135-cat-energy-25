@@ -70,3 +70,17 @@
     padding-bottom: 42px;
   }
 }
+
+.banner__button {
+  width: 280px;
+  padding: 11px 44px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 17px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

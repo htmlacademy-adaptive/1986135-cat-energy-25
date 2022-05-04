@@ -1,24 +1,77 @@
-// .card {}
+.card {
+  display: grid;
+  grid-template-columns: 120px auto;
+  grid-template-rows: repeat (3, auto);
+  padding: 19px 18px 14px 20px;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 161px 37px 39px;
+    border: none;
+    background-color: $bg-secondary-color;
+  }
+}
+
+.card__link-image {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.card__title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0 0 14px;
+}
 
 .card__link {
+  display: block;
+  max-width: 80px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 21px;
+  }
 }
 
 // .card__image {}
 
-// .card__wrapper {}
+.card__wrapper {
+  margin-bottom: 22.07px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+}
 
 // .card__title {}
 
 .card__list {
   @include list-reset;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
-// .card__item {}
+.card__item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.card__list:last-child .card__item {
+  margin-bottom: 0;
+}
 
 .card__feature {
   font-family: $basic-font;
@@ -29,9 +82,29 @@
 }
 
 .card__description {
+  margin: 0;
   font-family: $basic-font;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: $text-color;
+}
+
+.card__button {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  width: 280px;
+  padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    padding: 10px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    padding: 10px 43px;
+  }
 }

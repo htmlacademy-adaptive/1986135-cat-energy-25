@@ -12,15 +12,20 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  width: 320px;
+  // width: 320px;
   color: $text-color;
   background-color: #ffffff;
 
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 768px;
+  // }
 
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: 1440px;
+  // }
+}
+
+
+.page__container {
+  margin: 0 auto;
 }

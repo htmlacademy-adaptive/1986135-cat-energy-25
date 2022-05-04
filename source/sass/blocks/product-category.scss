@@ -102,7 +102,7 @@
   }
 }
 
-.product-category__link {
+.product-category__button {
   max-width: 134px;
   box-sizing: border-box;
   padding: 4px 47px 4px 0;
@@ -124,15 +124,15 @@
   }
 }
 
-.product-category__link:hover {
+.product-category__button:hover {
   opacity: 0.6;
 }
 
-.product-category__link:active {
+.product-category__button:active {
   opacity: 0.3;
 }
 
-.product-category__link::after {
+.product-category__button::after {
   content: "";
   display: block;
   position: absolute;
