@@ -1,15 +1,17 @@
 // .catalog-container {}
 
 .catalog-container__title {
-  padding: 27px 0 41px;
+  padding: 27px 20px 41px;
+  margin: 0;
 
   @include mid-size-title;
   border-top: $border-bottom;
   border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
-    margin: 64.3px 0 163px;
+    margin-bottom: 163px;
     padding: 0;
+    border: none;
 
     @include large-size-title;
   }

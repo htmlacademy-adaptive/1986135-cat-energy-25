@@ -1,5 +1,5 @@
 .products {
-  padding: 0 20px;
+  // padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -14,11 +14,13 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 234px);
+    grid-template-columns: repeat(2, 324px);
     gap: 141px 60px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {

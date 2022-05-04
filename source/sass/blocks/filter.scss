@@ -1,16 +1,40 @@
-// .filter {}
+.filter {
+  padding: 0 20px;
 
-// .filter__legend {}
+  @media (min-width: $tablet-width) {
+    padding: 30px 30px 30px 28px;
+  }
+}
+
+.filter__legend {
+  margin: 26px 0 35px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 62px;
+    font-size: 36px;
+    line-height: 1;
+  }
+}
 
 .filter__list {
   @include list-reset;
 }
 
-// .filter__item {}
-
-.filter__control {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
+.filter__item {
+  margin-bottom: 24.5px;
 }
+
+.filter__item:last-child {
+  margin-bottom: 25.5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+// .filter__control {}

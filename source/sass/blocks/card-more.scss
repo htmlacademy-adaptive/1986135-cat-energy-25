@@ -1,0 +1,127 @@
+.card-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 37px 39px;
+  background-color: $basic-white;
+  border: 2px solid #f2f2f2;
+}
+
+.card-more__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-more__link:hover .card-more__icon::before,
+.card-more__link:hover .card-more__icon::after {
+  background-color: $basic-green;
+}
+
+
+.card-more__icon {
+  margin: 0 auto 23px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card-more__icon::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  position: absolute;
+  top: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
+.card-more__icon::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  position: absolute;
+  bottom: 50%;
+  transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
+.card-more__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.card-more__title {
+  display: block;
+  max-width: 136px;
+  margin: 0 auto;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.card-more__subtitle {
+  display: inline-block;
+  margin: 0;
+  max-width: 168px;
+  font-family: $basic-font;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $text-color;
+}
+
+.card-more__button {
+  width: 279px;
+  padding: 10px 94px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color;
+  background-color: $bg-secondary-color;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    padding: 10px 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    padding: 10px 39px;
+  }
+}
+
+.card__button:hover,
+.card__button:focus {
+  background-color: #ebebeb;
+}
+
+.card__button:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
+}

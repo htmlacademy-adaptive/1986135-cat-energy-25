@@ -1,15 +1,36 @@
+.products-supplementary {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .products-supplementary__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    // padding: 26px 0 28px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 896px 245px;
     gap: 79px;
+    padding: 0;
+    margin-bottom: 86px;
   }
 }
 
 .products-supplementary__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 36px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 24px;
@@ -17,7 +38,14 @@
   color: $title-color;
 
   @media (min-width: $tablet-width) {
+    margin-left: 37px;
+    margin-bottom: 80px;
+
     @include mid-size-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 81px;
   }
 }
 
@@ -26,4 +54,13 @@
   flex-direction: column;
   gap: 0;
   // потом удалить
+  margin-bottom: 35.12px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }

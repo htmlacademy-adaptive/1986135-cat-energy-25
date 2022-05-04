@@ -1,0 +1,28 @@
+.line {
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: $basic-green;
+  z-index: -1;
+}
+
+.line__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.line__title {
+  padding: 0 40px;
+  background-color: $basic-white;
+  margin-left: -40px;
+  display: inline-block;
+}
+
+
+//и тут пока не понимаю, почему линия тянется только вправо при увеличении ширины псевдоэлемента. возможно, это из-за ограничения размера контейнера, но может и нет...?
