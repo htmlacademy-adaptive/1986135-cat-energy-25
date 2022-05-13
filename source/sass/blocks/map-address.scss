@@ -1,0 +1,35 @@
+.map-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    text-align: right;
+  }
+}
+
+.map-address span {
+  font-family: $basic-font;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.map-address__contacts {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    max-width: 160px;
+    font-size: 16px;
+  }
+}

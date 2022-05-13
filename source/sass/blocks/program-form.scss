@@ -1,37 +1,32 @@
-.program-form {
-  @media (min-width: $tablet-width) {
-    padding: 0 67px 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
-}
-
 .program-form__title {
-  margin: 0;
-  margin-bottom: 37px;
-  padding: 27px 20px 0;
-  display: inline-block;
+  margin: 0 auto 37px;
+  padding-top: 27px;
+  display: block;
+  max-width: 280px;
 
   @include mid-size-title;
-  border-top: $border-bottom;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
     padding: 0;
+    padding-left: 39px;
+    max-width: 670px;
     border-top: none;
+
+    @include large-size-title;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 56px;
+    max-width: 1220px;
+    padding-left: 0;
   }
 }
 
 .program-form__subtitle {
-  margin: 0;
-  margin-bottom: 39px;
-  padding: 0 20px;
+  margin: 0 auto 39px;
+  max-width: 280px;
+  display: block;
   font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
@@ -42,5 +37,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
     padding: 0;
+    padding-left: 40px;
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding-left: 0;
   }
 }

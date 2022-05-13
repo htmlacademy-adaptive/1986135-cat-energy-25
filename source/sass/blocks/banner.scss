@@ -1,29 +1,38 @@
 .banner {
-  padding: 27px 20px 0;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, #ffffff 37%, rgba(104, 183, 56, 0.85) 37%, rgba(104, 183, 56, 0.85) 67%), url("../img/index-bg-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 320px auto;
+  background-position: center, top;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, #ffffff 37%, rgba(104, 183, 56, 0.85) 37%, rgba(104, 183, 56, 0.85) 67%), url("../img/index-bg-mobile@2x.jpg");
+    background-size: cover, 320px auto;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
+  @media (min-width: $tablet-width) {
+    background-image: none;
   }
 }
 
 .banner__wrapper {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 320px 302px, 320px 302px;
-  background-position: top;
+  padding: 27px 0 0;
+  margin: 0 auto;
+  max-width: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    max-width: 709px;
+    max-width: 708px;
+    margin: 0 auto;
+    padding: 0 0 526px;
+    position: relative;
     background-color: inherit;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
+    padding-bottom: 200px;
   }
 }
 
@@ -37,6 +46,7 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    margin-left: 81px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -51,7 +61,7 @@
 
 .banner__slogan {
   margin: 0;
-  padding-bottom: 309px;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -59,7 +69,9 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 629px;
+    margin-left: 81px;
+    margin-bottom: 49px;
+    padding-bottom: 0;
     font-size: 20px;
     line-height: 20px;
     color: $title-color;
@@ -71,13 +83,38 @@
   }
 }
 
+.banner__image {
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    top: -80px;
+    left: 485px;
+    width: 552px;
+    height: 499px;
+    z-index: 1;
+  }
+}
+
 .banner__button {
   width: 280px;
+  margin: 0 auto;
   padding: 11px 44px;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 80px;
     width: 244px;
     padding: 17px 26px;
     font-size: 20px;

@@ -1,12 +1,11 @@
 .main-nav {
   position: relative;
   width: auto;
-  min-height: 65px;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
+  top: -40px;
   right: 0;
   z-index: 3;
   display: block;
@@ -32,7 +31,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 0;
   left: 0;
   width: 24px;
   height: 1.5px;
@@ -52,7 +51,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
+  top: -40px;
   right: 0;
 }
 
@@ -79,7 +78,7 @@
 
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
-  top: 66px;
+  top: 0;
   right: 0;
   z-index: 10;
   width: 100%;
@@ -99,16 +98,16 @@
   display: block;
 }
 
+
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 440px;
-    margin: 0 auto;
+    // width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
+    // width: 478px;
   }
 }
 

@@ -2,7 +2,7 @@
   font-weight: 500;
 
   @media (min-width: $tablet-width) {
-    width: 440px;
+    max-width: 440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
+    max-width: 483px;
   }
 }
 
@@ -41,8 +41,14 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    // color: $basic-white;
-    color: #000000;
+  }
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
   }
 }
 
@@ -90,11 +96,26 @@
 
     &--current {
       position: relative;
-
-      &::after {
-        background-color: $basic-green;
-        // background-color: $basic-white;
-      }
     }
+  }
+}
+
+.site-list__item--light a {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+    background-color: transparent;
+  }
+}
+
+
+.site-list__item--current-light::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: $basic-white;
   }
 }

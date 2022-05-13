@@ -1,46 +1,19 @@
-.map {
-  padding: 0;
-  position: relative;
+.map__wrapper {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .map__advertisment {
-  padding: 26px 20px;
+  margin: 0 auto;
 }
 
 .map__advertisment--colored {
   background-color: #f2f2f2;
-}
-
-.map__address {
-  font-family: $basic-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $text-color;
-}
-
-@media (min-width: $tablet-width) {
-  .map__advertisment {
-    padding: 60px 70px 56px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .map__advertisment {
-    position: absolute;
-    display: block;
-    box-sizing: border-box;
-    width: 565px;
-    margin: 0;
-    padding: 60px 80px 56px;
-    background-color: #ffffff;
-    left: 110px;
-    top: 95px;
-    z-index: 2;
-  }
-}
-
-.map__wrapper {
-  // position: relative;
 }

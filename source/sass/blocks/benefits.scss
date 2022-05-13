@@ -1,16 +1,68 @@
-// .benefits {}
-
 .benefits__wrapper {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg");
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 186.88px 61px 43px 58px;
+  box-sizing: border-box;
+  position: relative;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/benefits-bg-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/benefits-bg-mobile@2x.jpg");
+    background-size: auto, auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+    max-width: 708px;
+    padding: 71px 124px 69px 422px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/benefits-bg-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/benefits-bg-tablet@2x.jpg");
+      background-size: auto, 708px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 184.85px 43px 42px 41px;
+    max-width: 245px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/benefits-bg-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/benefits-bg-desktop@2x.jpg");
+      background-size: auto, 245px auto;
+    }
+  }
 }
 
-// .benefits__image {}
-
 .benefits__legend {
+  max-width: 162px;
+  margin: 0;
   font-family: $basic-font;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.benefits__legend::before {
+  content: "";
+  width: 78px;
+  height: 80px;
+  position: absolute;
+  top: 58.88px;
+  left: 101px;
+  background-image: url("../img/icons/icon-gift.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 77px;
+  }
 }

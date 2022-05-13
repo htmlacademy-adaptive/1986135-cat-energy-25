@@ -1,16 +1,53 @@
 .card {
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    border-bottom: none;
+  }
+}
+
+.card__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 120px auto;
-  grid-template-rows: repeat (3, auto);
   padding: 19px 18px 14px 20px;
-  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 161px 37px 39px;
+    padding: 161px 36px 39px;
+    position: relative;
     border: none;
-    background-color: $bg-secondary-color;
+  }
+}
+
+.card:nth-child(odd) .card__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 303px;
+    left: 81px;
+    width: 162px;
+    height: 172px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 42px;
+  }
+}
+
+.card:nth-child(even) .card__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 303px;
+    left: 78px;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 39px;
   }
 }
 
@@ -40,17 +77,22 @@
   }
 }
 
-// .card__image {}
-
-.card__wrapper {
-  margin-bottom: 22.07px;
+.card__image {
+  display: block;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 42px;
+    margin: 0;
   }
 }
 
-// .card__title {}
+.card__block {
+  margin-bottom: 22.07px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
 
 .card__list {
   @include list-reset;

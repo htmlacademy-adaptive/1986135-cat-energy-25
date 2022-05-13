@@ -1,24 +1,14 @@
-.products-supplementary {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
-}
-
 .products-supplementary__wrapper {
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    // padding: 26px 0 28px;
+    max-width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1220px;
     display: grid;
     grid-template-columns: 896px 245px;
     gap: 79px;
@@ -31,21 +21,25 @@
   display: inline-block;
   margin: 0;
   margin-bottom: 36px;
+  padding: 0 20px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $title-color;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     margin-left: 37px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
+    padding: 0 36px;
 
     @include mid-size-title;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 81px;
+    margin-left: -37px;
+    padding: 0 35px 0 40px;
   }
 }
 
@@ -53,7 +47,6 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  // потом удалить
   margin-bottom: 35.12px;
 
   @media (min-width: $tablet-width) {
@@ -61,6 +54,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
     border: none;
+  }
+}
+
+.products-supplementary__decorative-line {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
   }
 }
