@@ -1,18 +1,18 @@
 .form-ending {
   @media (min-width: $tablet-width) {
+    max-width: 630px;
     display: flex;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/-1;
-    margin-bottom: 82px;
+    max-width: 1220px;
   }
 }
 
 .form-ending__button {
   width: 280px;
-  margin-bottom: 21px;
+  margin: 0 auto 21px;
   padding: 10px 44px;
   font-size: 16px;
   line-height: 20px;
@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     width: 282px;
     padding: 13px 42px;
-    margin-bottom: 0;
+    margin: 0;
     margin-right: 61px;
     font-size: 20px;
     line-height: 26px;

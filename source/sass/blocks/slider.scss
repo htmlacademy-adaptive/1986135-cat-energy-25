@@ -1,0 +1,43 @@
+.slider__wrapper {
+  display: flex;
+}
+
+.slider__model {
+  @media (min-width: $tablet-width) {
+    // width: 592px;
+  }
+}
+
+.slider__model-before {
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.slider__model-after {
+  width: 0;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.slider__model-after img {
+  float: right;
+
+  @media (min-width: $tablet-width) {
+    width: 535px;
+    height: 511px;
+  }
+}
+
+.slider__model-before img {
+  @media (min-width: $tablet-width) {
+    width: 592px;
+    height: 511px;
+  }
+}

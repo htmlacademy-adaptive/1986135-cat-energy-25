@@ -1,6 +1,16 @@
-// .range {}
-
 .range__scale {
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    background: #dcdcdc;
+    border: none;
+    border-radius: 6px;
+    cursor: default;
+    position: relative;
+  }
+}
+
+.range__toggle {
   margin: 0 13px;
   position: relative;
   width: 85.58px;
@@ -11,40 +21,9 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 426px;
-    height: 6px;
-    background: #dcdcdc;
-    border: none;
-    border-radius: 6px;
-    cursor: default;
-  }
-}
-
-.range__bar {
-  position: absolute;
-  left: 6.11px;
-  top: 4px;
-  width: 35.66px;
-  height: 6px;
-  background: $basic-green;
-  border-radius: 6px;
-
-  @media (min-width: $tablet-width) {
-    width: 426px;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    cursor: pointer;
-  }
-}
-
-.range__toggle {
-  display: none;
-
-  @media (min-width: $tablet-width) {
     position: absolute;
-    top: -14px;
-    left: 50%;
+    top: -16px;
+    left: 45%;
     display: block;
     width: 33.84px;
     height: 34px;
@@ -70,10 +49,21 @@
 .range__toggle::before {
   content: "";
   position: absolute;
-  top: 40%;
-  left: 40%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: $basic-green;
+  left: 6.11px;
+  top: 3px;
+  width: 35.66px;
+  height: 6px;
+  background: $basic-green;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
 }

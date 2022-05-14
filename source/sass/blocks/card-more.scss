@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 52px 37px 39px;
+  padding: 25px 37px 39px;
   background-color: $basic-white;
-  border: 2px solid #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 37.5px 38px;
+    border: 2px solid #f2f2f2;
+  }
 }
 
 .card-more__link {
@@ -71,8 +75,7 @@
 
 .card-more__title {
   display: block;
-  max-width: 136px;
-  margin: 0 auto;
+  margin: 0 auto 8px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
@@ -82,19 +85,24 @@
   color: #111111;
 
   @media (min-width: $tablet-width) {
+    max-width: 136px;
     margin-bottom: 23px;
   }
 }
 
 .card-more__subtitle {
   display: inline-block;
-  margin: 0;
-  max-width: 168px;
+  margin: 0 0 21px;
   font-family: $basic-font;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    max-width: 136px;
+    margin-bottom: 0;
+  }
 }
 
 .card-more__button {
@@ -116,12 +124,12 @@
   }
 }
 
-.card__button:hover,
-.card__button:focus {
+.card-more__button:hover,
+.card-more:focus {
   background-color: #ebebeb;
 }
 
-.card__button:active {
+.card-more:active {
   background-color: #ebebeb;
   color: rgba(68, 68, 68, 0.3);
 }

@@ -13,16 +13,31 @@
 }
 
 .line__container {
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
 }
 
 .line__title {
-  padding: 0 40px;
+  max-width: 190px;
+  padding: 0 20px;
   background-color: $basic-white;
-  margin-left: -40px;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
 }
-
-
-//и тут пока не понимаю, почему линия тянется только вправо при увеличении ширины псевдоэлемента. возможно, это из-за ограничения размера контейнера, но может и нет...?
