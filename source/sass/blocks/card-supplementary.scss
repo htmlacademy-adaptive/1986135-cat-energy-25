@@ -58,6 +58,11 @@
 
 .card-supplementary__title {
   margin: 0;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -67,12 +72,8 @@
 }
 
 .card-supplementary__link {
-  font-family: $title-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  color: #222222;
   text-decoration: none;
+  color: #222222;
 }
 
 .card-supplementary__item {
@@ -84,8 +85,21 @@
   font-size: 14px;
   line-height: 14px;
 
+  @media (min-width: $tablet-width) {
+    min-width: 143px;
+    max-width: 226px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 288px;
+  }
+}
+
+.card-supplementary__list {
+  @media (min-width: $tablet-width) {
+    margin: 3px 0 20px;
   }
 }
 

@@ -97,13 +97,13 @@
 }
 
 .user-form__input:focus {
-  outline: 2px solid #444444;
-  border: none;
+  outline: 1px solid #444444;
+  border: 1px solid #444444;
 }
 
 .user-form__input:focus:invalid {
-  outline: 2px solid #ff8282;
-  border: none;
+  outline: 1px solid #ff8282;
+  border: 1px solid #ff8282;
 }
 
 .user-form__input::placeholder {
@@ -114,8 +114,8 @@
   }
 }
 
-.control__input::-webkit-outer-spin-button,
-.control__input::-webkit-inner-spin-button {
+.user-form__input::-webkit-outer-spin-button,
+.user-form__input::-webkit-inner-spin-button {
   appearance: none;
 }
 
@@ -169,6 +169,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 630px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -217,14 +218,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 67px;
-  }
-}
-
-.user-form__aboutself .user-form__title {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 30px;
   }
 }
 
@@ -285,6 +278,14 @@
   }
 }
 
+.user-form__aboutself .user-form__title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+  }
+}
+
 .user-form__add-products {
   margin-bottom: 34px;
   padding: 0;
@@ -337,6 +338,14 @@
 
 .user-form__decorative-line {
   @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.user-form__aboutself .user-form__decorative-line {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
 }

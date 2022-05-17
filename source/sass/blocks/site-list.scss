@@ -100,13 +100,12 @@
   }
 }
 
-.site-list__item--light a {
+.site-list--light a {
   @media (min-width: $desktop-width) {
     color: $basic-white;
     background-color: transparent;
   }
 }
-
 
 .site-list__item--current-light::after {
   @media (min-width: $desktop-width) {

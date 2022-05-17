@@ -1,9 +1,17 @@
 .card {
   border-bottom: 1px solid #ebebeb;
 
+  @include list-reset;
+
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
     border-bottom: none;
+  }
+}
+
+.card:nth-child(2) .card__link-image {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
   }
 }
 
@@ -12,48 +20,61 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 120px auto;
-  padding: 19px 18px 14px 20px;
+  padding: 19px 0 14px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 161px 36px 39px;
+    padding: 0 36px 39px;
     position: relative;
     border: none;
+    background-image: linear-gradient(#ffffff 14%, #f2f2f2 14%, #f2f2f2 86%);
   }
 }
 
-.card:nth-child(odd) .card__image {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 303px;
-    left: 81px;
-    width: 162px;
-    height: 172px;
-  }
+// .card:nth-child(odd) .card__image {
+//   @media (min-width: $tablet-width) {
+//     position: absolute;
+//     bottom: 303px;
+//     left: 81px;
+//     width: 162px;
+//     height: 172px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    left: 42px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     left: 42px;
+//   }
+// }
 
-.card:nth-child(even) .card__image {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 303px;
-    left: 78px;
-    width: 168px;
-    height: 200px;
-  }
+// .card:nth-child(even) .card__image {
+//   @media (min-width: $tablet-width) {
+//     position: absolute;
+//     bottom: 303px;
+//     left: 78px;
+//     width: 168px;
+//     height: 200px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    left: 39px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     left: 39px;
+//   }
+// }
 
 .card__link-image {
   grid-column: 1/2;
   grid-row: 1/4;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 34px;
+  }
+}
+
+.card__image {
+  display: block;
+  margin: 0;
 }
 
 .card__title {
@@ -74,15 +95,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 21px;
-  }
-}
-
-.card__image {
-  display: block;
-  margin: auto;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
+    max-width: 158px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -98,38 +114,29 @@
   @include list-reset;
   grid-column: 2/3;
   grid-row: 2/3;
-}
-
-.card__item {
   display: flex;
   justify-content: space-between;
+  font-family: $basic-font;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $text-color;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 16px;
     border-bottom: 1px solid #cdcdcd;
   }
 }
 
-.card__list:last-child .card__item {
+.card__list:last-child {
   margin-bottom: 0;
-}
-
-.card__feature {
-  font-family: $basic-font;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: $text-color;
 }
 
 .card__description {
   margin: 0;
-  font-family: $basic-font;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: $text-color;
 }
 
 .card__button {
@@ -148,5 +155,75 @@
   @media (min-width: $desktop-width) {
     width: 168px;
     padding: 10px 43px;
+  }
+}
+
+.card__image--chicken500 {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+    padding-top: 40px;
+  }
+}
+
+.card__image--chicken1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
+    padding-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 202px;
+  }
+}
+
+.card__image--fish500 {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+    padding-top: 23px;
+  }
+}
+
+.card__image--fish1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--buckwheat500 {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 171px;
+    padding-top: 25px;
+  }
+}
+
+.card__image--buckwheat1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--rice500 {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+    padding-top: 25px;
   }
 }
