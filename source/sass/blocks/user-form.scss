@@ -45,6 +45,7 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -92,6 +93,24 @@
   }
 }
 
+.user-form__icon-phone {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  width: 20px;
+  height: 20px;
+  fill: #222222;
+}
+
+.user-form__icon-mail {
+  position: absolute;
+  top: 37%;
+  right: 2%;
+  width: 18px;
+  height: 13px;
+  stroke: #222222;
+}
+
 .user-form__input:hover {
   border: 1px solid #cdcdcd;
 }
@@ -99,6 +118,22 @@
 .user-form__input:focus {
   outline: 1px solid #444444;
   border: 1px solid #444444;
+}
+
+.user-form__input:focus ~ .user-form__icon-phone {
+  fill: $basic-green;
+}
+
+.user-form__input:focus ~ .user-form__icon-mail {
+  stroke: $basic-green;
+}
+
+.user-form__input:focus:invalid ~ .user-form__icon-phone {
+  fill: #ff8282;
+}
+
+.user-form__input:focus:invalid ~ .user-form__icon-mail {
+  stroke: #ff8282;
 }
 
 .user-form__input:focus:invalid {
