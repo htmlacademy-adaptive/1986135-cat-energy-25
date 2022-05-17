@@ -85,11 +85,19 @@
 .user-form__input {
   flex-grow: 1;
   box-sizing: border-box;
-  padding: 12.5px 15.12px;
+  padding: 15px 14px;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
   border: $border-input;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 15.12px;
+    padding: 10px 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -274,11 +282,19 @@
   height: 150.5px;
   box-sizing: border-box;
   padding: 9.3px 13.5px;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
   border: $border-input;
   resize: none;
 
   @media (min-width: $tablet-width) {
     width: 631px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
