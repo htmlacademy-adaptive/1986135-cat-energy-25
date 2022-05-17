@@ -1,12 +1,12 @@
 .main-nav {
-  position: relative;
+  // position: relative;
   width: auto;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: -40px;
-  right: 0;
+  top: 24px;
+  right: 20px;
   z-index: 3;
   display: block;
   width: 24px;
@@ -51,8 +51,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -40px;
-  right: 0;
+  top: 14px;
+  right: 20px;
 }
 
 .main-nav--opened .main-nav__toggle::before,
@@ -78,7 +78,7 @@
 
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
-  top: 0;
+  top: 65px;
   right: 0;
   z-index: 10;
   width: 100%;

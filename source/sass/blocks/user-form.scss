@@ -45,6 +45,7 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -84,12 +85,38 @@
 .user-form__input {
   flex-grow: 1;
   box-sizing: border-box;
-  padding: 12.5px 15.12px;
+  padding: 15px 14px;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
   border: $border-input;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 15.12px;
+    padding: 10px 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
+}
+
+.user-form__icon-phone {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  width: 20px;
+  height: 20px;
+  fill: #222222;
+}
+
+.user-form__icon-mail {
+  position: absolute;
+  top: 37%;
+  right: 2%;
+  width: 18px;
+  height: 13px;
+  stroke: #222222;
 }
 
 .user-form__input:hover {
@@ -97,13 +124,29 @@
 }
 
 .user-form__input:focus {
-  outline: 2px solid #444444;
-  border: none;
+  outline: 1px solid #444444;
+  border: 1px solid #444444;
+}
+
+.user-form__input:focus ~ .user-form__icon-phone {
+  fill: $basic-green;
+}
+
+.user-form__input:focus ~ .user-form__icon-mail {
+  stroke: $basic-green;
+}
+
+.user-form__input:focus:invalid ~ .user-form__icon-phone {
+  fill: #ff8282;
+}
+
+.user-form__input:focus:invalid ~ .user-form__icon-mail {
+  stroke: #ff8282;
 }
 
 .user-form__input:focus:invalid {
-  outline: 2px solid #ff8282;
-  border: none;
+  outline: 1px solid #ff8282;
+  border: 1px solid #ff8282;
 }
 
 .user-form__input::placeholder {
@@ -114,8 +157,8 @@
   }
 }
 
-.control__input::-webkit-outer-spin-button,
-.control__input::-webkit-inner-spin-button {
+.user-form__input::-webkit-outer-spin-button,
+.user-form__input::-webkit-inner-spin-button {
   appearance: none;
 }
 
@@ -169,6 +212,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 630px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -220,14 +264,6 @@
   }
 }
 
-.user-form__aboutself .user-form__title {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 30px;
-  }
-}
-
 .user-form__comment {
   max-width: 280px;
   margin: 0 auto;
@@ -246,11 +282,19 @@
   height: 150.5px;
   box-sizing: border-box;
   padding: 9.3px 13.5px;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
   border: $border-input;
   resize: none;
 
   @media (min-width: $tablet-width) {
     width: 631px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -282,6 +326,14 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.user-form__aboutself .user-form__title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
   }
 }
 
@@ -337,6 +389,14 @@
 
 .user-form__decorative-line {
   @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.user-form__aboutself .user-form__decorative-line {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
 }
