@@ -69,12 +69,20 @@
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 34px;
+    min-height: 206px;
+    max-height: 206px;
   }
 }
 
 .card__image {
   display: block;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 .card__title {
@@ -155,75 +163,5 @@
   @media (min-width: $desktop-width) {
     width: 168px;
     padding: 10px 43px;
-  }
-}
-
-.card__image--chicken500 {
-  @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 172px;
-    padding-top: 40px;
-  }
-}
-
-.card__image--chicken1000 {
-  @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 206px;
-    padding-top: 13px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 202px;
-  }
-}
-
-.card__image--fish500 {
-  @media (min-width: $tablet-width) {
-    width: 163px;
-    height: 174px;
-    padding-top: 23px;
-  }
-}
-
-.card__image--fish1000 {
-  @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 200px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 196px;
-  }
-}
-
-.card__image--buckwheat500 {
-  @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 171px;
-    padding-top: 25px;
-  }
-}
-
-.card__image--buckwheat1000 {
-  @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 200px;
-    margin-top: -5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 196px;
-  }
-}
-
-.card__image--rice500 {
-  @media (min-width: $tablet-width) {
-    width: 163px;
-    height: 174px;
-    padding-top: 25px;
   }
 }

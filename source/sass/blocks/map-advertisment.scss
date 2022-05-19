@@ -1,19 +1,25 @@
 .map-advertisment {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    position: relative;
+  }
+}
+
+.map-advertisment__block {
   max-width: 280px;
+  margin: 0 auto;
   padding: 26px 0;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     padding: 60px 0 56px;
     max-width: 630px;
-    background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 110px;
+    left: 0;
     top: 95px;
     display: flex;
     box-sizing: border-box;
@@ -21,6 +27,7 @@
     margin: 0;
     padding: 56px 80px;
     z-index: 2;
+    background-color: $basic-white;
   }
 }
 
