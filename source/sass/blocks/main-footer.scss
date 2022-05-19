@@ -10,7 +10,7 @@
   max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 34px 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,8 @@
   border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-top: 6px;
+    margin-right: 30px;
     padding: 0;
     border: none;
   }

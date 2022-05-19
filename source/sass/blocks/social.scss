@@ -8,6 +8,7 @@
   border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
+    max-width: 150px;
     border: none;
   }
 }
@@ -17,6 +18,10 @@
   position: relative;
   width: 46px;
   height: 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+  }
 }
 
 .social__link svg {

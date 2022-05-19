@@ -4,8 +4,10 @@
   padding: 0 35px;
 
   @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
-    max-width: 592px;
+    max-width: 595px;
   }
 }
 
@@ -28,6 +30,10 @@
     padding: 0 10px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2px;
   }
 }
 
