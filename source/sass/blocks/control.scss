@@ -30,10 +30,10 @@
 
 .control > .control__input--radio:checked + .control__label::after {
   position: absolute;
-  top: 8.28px;
-  left: 8.28px;
-  width: 13.5px;
-  height: 13.55px;
+  top: 9px;
+  left: 9px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: $basic-green;
   content: "";
@@ -41,12 +41,12 @@
 
 .control > .control__input--checkbox:checked + .control__label::after {
   position: absolute;
-  top: 8.1px;
-  left: 6.2px;
-  width: 18px;
-  height: 14px;
-  background-image: url("../img/icons/checkbox-on.svg");
-  background-repeat: no-repeat;
+  top: 6px;
+  left: 4px;
+  width: 25px;
+  height: 19px;
+  background: $basic-green;
+  clip-path: polygon(3% 45%, 9% 33%, 45% 80%, 90% 10%, 98% 20%, 45% 100%);
   content: "";
 }
 
