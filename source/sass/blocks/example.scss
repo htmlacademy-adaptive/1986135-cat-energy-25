@@ -114,6 +114,7 @@
   line-height: 24px;
   text-align: center;
   color: $title-color;
+  text-transform: uppercase;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
@@ -128,7 +129,7 @@
 .example__item:nth-child(2) .example__number {
   display: block;
   box-sizing: border-box;
-  padding: 16px 21px;
+  padding: 16px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 15px 30px 20px;

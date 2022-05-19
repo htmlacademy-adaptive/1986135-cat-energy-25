@@ -1,5 +1,10 @@
 .slider__wrapper {
   display: flex;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__model {

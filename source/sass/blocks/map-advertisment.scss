@@ -32,6 +32,7 @@
 }
 
 .map-advertisment__title {
+  margin: 0;
   max-width: 138.5px;
   font-family: $title-font;
   font-weight: 400;
@@ -41,7 +42,6 @@
   color: #111111;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     max-width: 176px;
     font-size: 20px;
     line-height: 26px;
