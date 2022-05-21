@@ -228,7 +228,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 1px;
+  top: 2px;
   right: 10px;
   width: 24px;
   height: 24px;
@@ -240,14 +240,28 @@
   transition: 0.5s;
 
   @media (min-width: $tablet-width) {
-    top: -3px;
+    top: -2px;
     right: 9px;
+    height: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    right: 0;
     height: 38px;
   }
 }
 
 .product-category__button:hover::after {
-  top: -3px;
+  top: 2px;
   right: 0;
   transform: scaleX(1.4);
+
+  @media (min-width: $tablet-width) {
+    top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
