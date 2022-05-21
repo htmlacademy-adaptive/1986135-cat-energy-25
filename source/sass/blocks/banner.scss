@@ -32,6 +32,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
+    margin-top: 111px;
     margin-bottom: 66px;
     padding-bottom: 200px;
   }
@@ -82,13 +83,10 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-    padding-bottom: 2px;
   }
 }
 
 .banner__image {
-  // margin-left: 20px;
-
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;

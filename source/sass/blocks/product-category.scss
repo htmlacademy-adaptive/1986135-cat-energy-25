@@ -235,6 +235,9 @@
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transform: scaleX(1);
+  transform-origin: center left;
+  transition: 0.5s;
 
   @media (min-width: $tablet-width) {
     top: -3px;
@@ -244,8 +247,7 @@
 }
 
 .product-category__button:hover::after {
-  top: 8px;
-  width: 32px;
-  height: 24px;
-  background-image: url("../img/arrow-bigger.svg");
+  top: -3px;
+  right: 0;
+  transform: scaleX(1.4);
 }

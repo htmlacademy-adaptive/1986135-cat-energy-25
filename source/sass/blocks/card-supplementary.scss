@@ -1,7 +1,7 @@
 .card-supplementary {
   max-width: 320px;
   margin: 0 auto;
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 15px 0 17px;
+    padding: 16.5px 0;
     max-width: 896px;
     border-top: none;
   }
@@ -44,14 +44,17 @@
 .card-supplementary__wrapper {
   @media (min-width: $tablet-width) {
     max-width: 632px;
+    margin-bottom: 2px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 612px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 324px 288px;
     align-items: center;
+    border: none;
   }
 }
 
@@ -63,6 +66,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #222222;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -93,7 +97,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 288px;
+    min-width: 288px;
+    max-width: 290px;
   }
 }
 
@@ -101,19 +106,34 @@
   @media (min-width: $tablet-width) {
     margin: 3px 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.card-supplementary__description {
+  @media (min-width: $desktop-width) {
+    min-width: 44px;
+  }
 }
 
 .card-supplementary__button {
   width: 280px;
   padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding: 12px 109px;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-left: 38px;
-    padding: 7px 109px;
+    padding: 11px 92px;
   }
 }

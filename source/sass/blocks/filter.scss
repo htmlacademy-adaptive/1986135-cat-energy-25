@@ -1,6 +1,6 @@
-.filter__legend {
+.filter__title {
   max-width: 145px;
-  margin: 0 0 35px;
+  margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -10,33 +10,35 @@
   color: $title-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 62px 40px;
+    margin-left: 34px;
+    padding: 0 34px;
     max-width: 212px;
     font-size: 36px;
     line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 57px 40px;
+    margin-left: -41px;
     padding: 0 40px;
   }
 }
 
 .filter__list {
-  max-width: 320px;
+  max-width: 280px;
 
   @include list-reset;
-  padding: 22px 20px 20px;
+  padding: 27px 20px 22px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    max-width: 708px;
     margin: 0;
     padding: 0;
   }
 }
 
 .filter__item {
-  margin-bottom: 24.5px;
+  margin-bottom: 23.5px;
 }
 
 .filter__item:last-child {

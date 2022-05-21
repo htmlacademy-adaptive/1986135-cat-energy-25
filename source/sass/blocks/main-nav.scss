@@ -1,5 +1,4 @@
 .main-nav {
-  // position: relative;
   width: auto;
 }
 
@@ -10,7 +9,7 @@
   z-index: 3;
   display: block;
   width: 24px;
-  height: 38px;
+  height: 18px;
   background-color: $basic-white;
   border: none;
   cursor: pointer;
@@ -103,11 +102,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    // width: 440px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // width: 478px;
   }
 }
 

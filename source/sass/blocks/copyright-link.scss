@@ -1,11 +1,12 @@
 .copyright-link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    max-width: 163px;
+    max-width: 164px;
   }
 }
 
