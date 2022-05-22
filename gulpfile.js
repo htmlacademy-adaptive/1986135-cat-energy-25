@@ -151,9 +151,6 @@ export const build = gulp.series(
   ),
 );
 
-//Build
-
-
 export default gulp.series(
   clean,
   copy,
