@@ -35,14 +35,14 @@
     max-width: 708px;
     display: grid;
     grid-template-columns: repeat(2, 245px);
-    gap: 37px 153px;
+    gap: 77px 140px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
     max-width: 1220px;
-    grid-template-columns: repeat(4, 230px);
-    gap: 95px;
+    grid-template-columns: 235px 240px 235px 245px;
+    gap: 88px;
   }
 }
 
@@ -70,7 +70,7 @@
   content: counter(advantage-number);
   width: 112px;
   top: -40px;
-  left: 50%;
+  left: 47%;
   font-family: $title-font;
   font-size: 280px;
   line-height: 280px;
@@ -83,7 +83,7 @@
 }
 
 .advantages__title {
-  margin: 0 0 40px 20px;
+  margin: 0 0 40px 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -91,7 +91,6 @@
   color: $title-color;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
     margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;

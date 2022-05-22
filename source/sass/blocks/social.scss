@@ -1,13 +1,14 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 134px;
+  max-width: 140px;
 
   @include list-reset;
   padding: 9px 70px;
   border-bottom: $border-bottom;
 
   @media (min-width: $tablet-width) {
+    max-width: 150px;
     border: none;
   }
 }
@@ -15,8 +16,12 @@
 .social__link {
   display: block;
   position: relative;
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+  }
 }
 
 .social__link svg {

@@ -31,7 +31,7 @@
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 0;
+    padding: 17px 0 9px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -75,7 +75,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 2px;
         left: 0;
         height: 2px;
         background-color: $basic-green;
@@ -112,7 +112,7 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     height: 2px;
     background-color: $basic-white;

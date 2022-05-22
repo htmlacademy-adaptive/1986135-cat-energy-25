@@ -20,7 +20,6 @@
 .products-supplementary__title {
   display: inline-block;
   margin: 0;
-  margin-bottom: 36px;
   padding: 0 20px;
   font-family: $title-font;
   font-weight: 400;
@@ -30,7 +29,7 @@
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    margin-left: 37px;
+    margin-left: 31px;
     margin-bottom: 0;
     padding: 0 36px;
 
@@ -50,7 +49,7 @@
   margin-bottom: 35.12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 64px;
     border: 1px solid #cdcdcd;
   }
 
@@ -61,7 +60,9 @@
 }
 
 .products-supplementary__decorative-line {
+  margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 76px;
   }
 }
